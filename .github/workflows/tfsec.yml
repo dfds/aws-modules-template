@@ -1,9 +1,9 @@
 name: Run tfsec on merge
 on:
   push:
-    branches:
-      - master
-      - main
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
   workflow_dispatch:
 jobs:
   tfsec:
